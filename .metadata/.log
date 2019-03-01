@@ -43,3 +43,1097 @@ Binding(CTRL+U,
 
 !ENTRY org.eclipse.launchbar.core 2 0 2019-02-08 14:36:19.889
 !MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-02-08 14:54:07.693
+!MESSAGE Using manifest XSD 'manifest-schema/sdk_manifest_v3.3.xsd' for manifest 'FRDM-KL25Z_manifest.xml'.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-02-08 14:54:07.789
+!MESSAGE Using SDK manifest 'FRDM-KL25Z_manifest.xml'.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-02-08 14:54:15.403
+!MESSAGE Using manifest XSD 'manifest-schema/sdk_manifest_v3.3.xsd' for manifest 'FRDM-KL25Z_manifest.xml'.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-02-08 14:54:15.441
+!MESSAGE Using SDK manifest 'FRDM-KL25Z_manifest.xml'.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-02-08 14:54:15.597
+!MESSAGE The device 'MKL25Z128xxx4' (version='1.0.0') from SDK 'SDK_2.x_FRDM-KL25Z' (version='2.2.0', build='') will be installed.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-02-08 14:54:15.752
+!MESSAGE Using manifest XSD 'manifest-schema/sdk_manifest_v3.3.xsd' for manifest '/usr/local/mcuxpressoide-10.3.0_2200/ide/plugins/com.nxp.mcuxpresso.core.datamodels.resources_10.3.0.201810041206/fragments/ksdk_manifest.xml'.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-02-08 14:54:15.767
+!MESSAGE Using SDK manifest 'ksdk_manifest.xml'.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-02-08 14:54:16.013
+!MESSAGE Using manifest XSD 'manifest-schema/sdk_manifest_v3.3.xsd' for manifest '/usr/local/mcuxpressoide-10.3.0_2200/ide/plugins/com.nxp.mcuxpresso.core.datamodels.resources_10.3.0.201810041206/override/override_manifest.xml'.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-02-08 14:54:16.023
+!MESSAGE Using SDK manifest 'override_manifest.xml'.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-02-08 14:54:18.044
+!MESSAGE Using manifest XSD 'manifest-schema/sdk_manifest_v3.3.xsd' for manifest 'FRDM-KL25Z_manifest.xml'.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-02-08 14:54:18.088
+!MESSAGE Using SDK manifest 'FRDM-KL25Z_manifest.xml'.
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-02-08 14:57:38.757
+!MESSAGE Indexed 'frdmkl25z_demo_apps_bubble' (0 sources, 0 headers) in 0.002 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.crt.log 1 0 2019-02-08 14:58:50.696
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-02-08 14:58:50.698
+!MESSAGE RedlinkServer telnet session connected on port 3025->58690 @ 127.0.0.1
+
+!ENTRY com.crt.debugcommon 4 0 2019-02-08 14:58:56.891
+!MESSAGE Unable to parse ProbeList output to get probe ref count: []
+
+!ENTRY com.nxp.mcuxpresso.trace.core 1 0 2019-02-08 14:59:04.197
+!MESSAGE SWO session connected on port 10224->47836 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10004 2019-02-08 15:00:20.991
+!MESSAGE Failed to execute MI command:
+-data-list-register-values x 14
+Error message from debugger back end:
+Invalid thread id: 1
+!STACK 0
+java.lang.Exception: Invalid thread id: 1
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:943)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:772)
+
+!ENTRY com.nxp.mcuxpresso.trace.core 1 0 2019-02-08 15:02:15.114
+!MESSAGE SWO session connected on port 10224->47932 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10004 2019-02-08 15:02:31.941
+!MESSAGE Failed to execute MI command:
+-data-list-register-values x 14
+Error message from debugger back end:
+Invalid thread id: 1
+!STACK 0
+java.lang.Exception: Invalid thread id: 1
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:943)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:772)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-02-08 15:02:43.052
+!MESSAGE Error setting focus to : org.eclipse.e4.ui.model.application.ui.basic.impl.PartImpl Instruction Trace Config
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:487)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:424)
+	at org.eclipse.swt.widgets.Control.getVisible(Control.java:3197)
+	at org.eclipse.swt.widgets.Composite.setFocus(Composite.java:1525)
+	at org.eclipse.swt.widgets.Composite.setFocus(Composite.java:1525)
+	at org.eclipse.swt.widgets.Composite.setFocus(Composite.java:1525)
+	at org.eclipse.ui.forms.widgets.SharedScrolledComposite.setFocus(SharedScrolledComposite.java:128)
+	at org.eclipse.swt.widgets.Composite.setFocus(Composite.java:1525)
+	at com.nxp.mcuxpresso.trace.ui.views.ConfigFormView.setFocus(ConfigFormView.java:150)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.delegateSetFocus(CompatibilityPart.java:216)
+	at sun.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:305)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:311)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:233)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:107)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.focusGui(PartRenderingEngine.java:789)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer$1.setFocus(ContributedPartRenderer.java:103)
+	at org.eclipse.swt.widgets.Composite.setFocus(Composite.java:1525)
+	at org.eclipse.swt.custom.CTabItem.setFocus(CTabItem.java:332)
+	at org.eclipse.swt.custom.CTabFolder.setFocus(CTabFolder.java:2619)
+	at org.eclipse.swt.widgets.Control.fixFocus(Control.java:252)
+	at org.eclipse.swt.widgets.Control.setVisible(Control.java:5519)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3163)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3171)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1858)
+	at org.eclipse.swt.custom.CTabFolder.lambda$0(CTabFolder.java:328)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5348)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1348)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4602)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4183)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
+!SESSION 2019-02-27 09:12:24.822 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.jface 2 0 2019-02-27 09:12:34.459
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-02-27 09:12:34.459
+!MESSAGE A conflict occurred for CTRL+U:
+Binding(CTRL+U,
+	ParameterizedCommand(Command(com.nxp.swtools.clocks.commands.unlockAll,Unlock All Settings,
+		,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1164990a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+U,
+	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.commands.Execute,Execute,
+		Evaluate selected text,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@549404e7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 4 4 2019-02-27 09:12:35.519
+!MESSAGE Plugin com.nxp.mcuxpresso.trace.core, extension org.eclipse.ui.decorators, id com.nxp.mcuxpresso.trace.core.decorator: Required sub element 'icon' not defined
+
+!ENTRY org.eclipse.ui 4 4 2019-02-27 09:12:35.519
+!MESSAGE Plugin com.nxp.mcuxpresso.trace.core, extension org.eclipse.ui.decorators, id com.nxp.mcuxpresso.trace.core.decorator: Unknown extension tag found: decorator
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-02-27 09:12:37.639
+!MESSAGE Using manifest XSD 'manifest-schema/sdk_manifest_v3.3.xsd' for manifest 'FRDM-KL25Z_manifest.xml'.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-02-27 09:12:37.733
+!MESSAGE Using SDK manifest 'FRDM-KL25Z_manifest.xml'.
+
+!ENTRY org.eclipse.jface.text 2 0 2019-02-27 09:12:40.115
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2019-02-27 09:12:40.115
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-02-27 09:12:40.411
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-02-27 09:12:40.414
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-02-27 09:12:40.414
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-02-27 09:14:14.961
+!MESSAGE Using manifest XSD 'manifest-schema/sdk_manifest_v3.3.xsd' for manifest '/usr/local/mcuxpressoide-10.3.0_2200/ide/plugins/com.nxp.mcuxpresso.core.datamodels.resources_10.3.0.201810041206/fragments/ksdk_manifest.xml'.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-02-27 09:14:14.979
+!MESSAGE Using SDK manifest 'ksdk_manifest.xml'.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-02-27 09:14:15.228
+!MESSAGE Using manifest XSD 'manifest-schema/sdk_manifest_v3.3.xsd' for manifest '/usr/local/mcuxpressoide-10.3.0_2200/ide/plugins/com.nxp.mcuxpresso.core.datamodels.resources_10.3.0.201810041206/override/override_manifest.xml'.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-02-27 09:14:15.239
+!MESSAGE Using SDK manifest 'override_manifest.xml'.
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-02-27 09:16:05.527
+!MESSAGE Indexed 'frdmkl25z_driver_examples_tsi_v4_normal' (0 sources, 0 headers) in 0.002 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.crt.log 1 0 2019-02-27 09:18:40.362
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-02-27 09:18:40.365
+!MESSAGE RedlinkServer telnet session connected on port 3025->47578 @ 127.0.0.1
+
+!ENTRY com.crt.debugcommon 4 0 2019-02-27 09:18:43.976
+!MESSAGE Unable to parse ProbeList output to get probe ref count: []
+
+!ENTRY com.nxp.mcuxpresso.trace.core 1 0 2019-02-27 09:18:52.283
+!MESSAGE SWO session connected on port 10224->58168 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-02-27 09:34:06.952
+!MESSAGE Indexed 'TSI' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10004 2019-02-27 09:34:16.767
+!MESSAGE Failed to execute MI command:
+-data-list-register-values x 14
+Error message from debugger back end:
+Invalid thread id: 1
+!STACK 0
+java.lang.Exception: Invalid thread id: 1
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:943)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:772)
+
+!ENTRY org.eclipse.jface.text 2 0 2019-02-27 09:37:26.879
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2019-02-27 09:37:26.879
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY com.crt.log 4 -1 2019-02-27 09:38:18.828
+!MESSAGE Attempted to beginRule: R/, does not match outer scope rule: MultiRule[P/frdmkl25z_demo_apps_bubble,P/frdmkl25z_driver_examples_tsi_v4_normal,P/TSI]
+!STACK 0
+java.lang.Exception: org.eclipse.core.runtime.CoreException: Attempted to beginRule: R/, does not match outer scope rule: MultiRule[P/frdmkl25z_demo_apps_bubble,P/frdmkl25z_driver_examples_tsi_v4_normal,P/TSI]
+	at com.crt.utils.general.Reporter.log(Reporter.java:654)
+	at com.nxp.mcuxpresso.core.datamodels.SDKChipVendorDatabase.save(SDKChipVendorDatabase.java:500)
+	at com.crt.config.database.ChipVendor.save(ChipVendor.java:756)
+	at com.crt.config.database.TargetConfig.save(TargetConfig.java:1632)
+	at com.crt.config.SaveViewInfo.saving(SaveViewInfo.java:102)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:389)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:198)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:201)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1186)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1165)
+	at org.eclipse.core.internal.resources.Project.close(Project.java:193)
+	at org.eclipse.ui.actions.CloseResourceAction.invokeOperation(CloseResourceAction.java:135)
+	at org.eclipse.ui.actions.WorkspaceAction.execute(WorkspaceAction.java:156)
+	at org.eclipse.ui.actions.WorkspaceAction$1.runInWorkspace(WorkspaceAction.java:456)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: org.eclipse.core.runtime.CoreException: Attempted to beginRule: R/, does not match outer scope rule: MultiRule[P/frdmkl25z_demo_apps_bubble,P/frdmkl25z_driver_examples_tsi_v4_normal,P/TSI]
+	at org.eclipse.cdt.internal.core.settings.model.ExceptionFactory.createCoreException(ExceptionFactory.java:26)
+	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.setProjectDescription(AbstractCProjectDescriptionStorage.java:205)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionStorageManager.setProjectDescription(CProjectDescriptionStorageManager.java:149)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:853)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:814)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:808)
+	at org.eclipse.cdt.core.model.CoreModel.setProjectDescription(CoreModel.java:1388)
+	at com.nxp.mcuxpresso.core.datamodels.SDKChipVendorDatabase.save(SDKChipVendorDatabase.java:495)
+	... 15 more
+Caused by: java.lang.IllegalArgumentException: Attempted to beginRule: R/, does not match outer scope rule: MultiRule[P/frdmkl25z_demo_apps_bubble,P/frdmkl25z_driver_examples_tsi_v4_normal,P/TSI]
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:63)
+	at org.eclipse.core.internal.jobs.ThreadJob.illegalPush(ThreadJob.java:134)
+	at org.eclipse.core.internal.jobs.ThreadJob.push(ThreadJob.java:389)
+	at org.eclipse.core.internal.jobs.ImplicitJobs.begin(ImplicitJobs.java:63)
+	at org.eclipse.core.internal.jobs.JobManager.beginRule(JobManager.java:308)
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:121)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:2188)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2235)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:638)
+	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.setProjectDescription(AbstractCProjectDescriptionStorage.java:203)
+	... 21 more
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-02-27 09:39:33.752
+!MESSAGE Indexed 'TSI' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.crt.log 1 0 2019-02-27 09:45:08.547
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-02-27 09:45:08.549
+!MESSAGE RedlinkServer telnet session connected on port 3025->48476 @ 127.0.0.1
+
+!ENTRY com.crt.debugcommon 4 0 2019-02-27 09:45:12.976
+!MESSAGE Unable to parse ProbeList output to get probe ref count: []
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-02-27 09:50:03.937
+!MESSAGE Indexed 'frdmkl25z_cmsis_driver_examples_uart_dma_transfer' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-02-27 09:50:08.775
+!MESSAGE Indexed 'frdmkl25z_cmsis_driver_examples_uart_interrupt_transfer' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-02-27 09:50:55.840
+!MESSAGE Indexed 'frdmkl25z_driver_examples_tsi_v4_normal' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!SESSION 2019-02-27 21:04:28.457 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.jface 2 0 2019-02-27 21:04:39.007
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-02-27 21:04:39.007
+!MESSAGE A conflict occurred for CTRL+U:
+Binding(CTRL+U,
+	ParameterizedCommand(Command(com.nxp.swtools.clocks.commands.unlockAll,Unlock All Settings,
+		,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@585672dd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+U,
+	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.commands.Execute,Execute,
+		Evaluate selected text,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@49c947f7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 4 4 2019-02-27 21:04:40.259
+!MESSAGE Plugin com.nxp.mcuxpresso.trace.core, extension org.eclipse.ui.decorators, id com.nxp.mcuxpresso.trace.core.decorator: Required sub element 'icon' not defined
+
+!ENTRY org.eclipse.ui 4 4 2019-02-27 21:04:40.260
+!MESSAGE Plugin com.nxp.mcuxpresso.trace.core, extension org.eclipse.ui.decorators, id com.nxp.mcuxpresso.trace.core.decorator: Unknown extension tag found: decorator
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-02-27 21:04:42.752
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-02-27 21:04:42.755
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-02-27 21:04:42.755
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-02-27 21:04:43.772
+!MESSAGE Using manifest XSD 'manifest-schema/sdk_manifest_v3.3.xsd' for manifest 'FRDM-KL25Z_manifest.xml'.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-02-27 21:04:43.892
+!MESSAGE Using SDK manifest 'FRDM-KL25Z_manifest.xml'.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-02-27 21:04:46.266
+!MESSAGE Connection to http://www.pemicro.com/eclipse/updates/p2.index failed on www.pemicro.com: Temporary failure in name resolution. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: www.pemicro.com: Temporary failure in name resolution
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-02-27 21:04:46.498
+!MESSAGE Unknown Host: http://www.pemicro.com/eclipse/updates/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: www.pemicro.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-02-27 21:04:46.699
+!MESSAGE Connection to http://www.nxp.com/lgfiles/updates/Eclipse/mcuxpressoide/v10_3/p2.index failed on www.nxp.com: Temporary failure in name resolution. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: www.nxp.com: Temporary failure in name resolution
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-02-27 21:04:46.912
+!MESSAGE Unknown Host: http://www.nxp.com/lgfiles/updates/Eclipse/mcuxpressoide/v10_3/content.xml
+!STACK 0
+java.net.UnknownHostException: www.nxp.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-02-27 21:04:46.919
+!MESSAGE Connection to http://mcuxpresso.nxp.com/staticdata/updates/kex_ide_5.0/p2.index failed on mcuxpresso.nxp.com: Temporary failure in name resolution. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: mcuxpresso.nxp.com: Temporary failure in name resolution
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-02-27 21:04:47.128
+!MESSAGE Unknown Host: http://mcuxpresso.nxp.com/staticdata/updates/kex_ide_5.0/content.xml
+!STACK 0
+java.net.UnknownHostException: mcuxpresso.nxp.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-02-27 21:04:47.131
+!MESSAGE Connection to http://download.eclipse.org/releases/oxygen/p2.index failed on download.eclipse.org: Temporary failure in name resolution. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org: Temporary failure in name resolution
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-02-27 21:04:47.343
+!MESSAGE Unknown Host: http://download.eclipse.org/releases/oxygen/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SESSION 2019-02-27 21:16:54.922 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.jface 2 0 2019-02-27 21:17:04.353
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-02-27 21:17:04.353
+!MESSAGE A conflict occurred for CTRL+U:
+Binding(CTRL+U,
+	ParameterizedCommand(Command(com.nxp.swtools.clocks.commands.unlockAll,Unlock All Settings,
+		,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1631dbbc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+U,
+	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.commands.Execute,Execute,
+		Evaluate selected text,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3b663112,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 4 4 2019-02-27 21:17:05.623
+!MESSAGE Plugin com.nxp.mcuxpresso.trace.core, extension org.eclipse.ui.decorators, id com.nxp.mcuxpresso.trace.core.decorator: Required sub element 'icon' not defined
+
+!ENTRY org.eclipse.ui 4 4 2019-02-27 21:17:05.623
+!MESSAGE Plugin com.nxp.mcuxpresso.trace.core, extension org.eclipse.ui.decorators, id com.nxp.mcuxpresso.trace.core.decorator: Unknown extension tag found: decorator
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-02-27 21:17:08.340
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-02-27 21:17:08.342
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-02-27 21:17:08.342
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-02-27 21:17:10.189
+!MESSAGE Using manifest XSD 'manifest-schema/sdk_manifest_v3.3.xsd' for manifest 'FRDM-KL25Z_manifest.xml'.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-02-27 21:17:10.350
+!MESSAGE Using SDK manifest 'FRDM-KL25Z_manifest.xml'.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-02-27 21:17:12.801
+!MESSAGE Connection to http://www.pemicro.com/eclipse/updates/p2.index failed on www.pemicro.com: Temporary failure in name resolution. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: www.pemicro.com: Temporary failure in name resolution
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-02-27 21:17:13.072
+!MESSAGE Unknown Host: http://www.pemicro.com/eclipse/updates/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: www.pemicro.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-02-27 21:17:13.260
+!MESSAGE Connection to http://www.nxp.com/lgfiles/updates/Eclipse/mcuxpressoide/v10_3/p2.index failed on www.nxp.com: Temporary failure in name resolution. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: www.nxp.com: Temporary failure in name resolution
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-02-27 21:17:13.469
+!MESSAGE Unknown Host: http://www.nxp.com/lgfiles/updates/Eclipse/mcuxpressoide/v10_3/content.xml
+!STACK 0
+java.net.UnknownHostException: www.nxp.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-02-27 21:17:13.475
+!MESSAGE Connection to http://mcuxpresso.nxp.com/staticdata/updates/kex_ide_5.0/p2.index failed on mcuxpresso.nxp.com: Temporary failure in name resolution. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: mcuxpresso.nxp.com: Temporary failure in name resolution
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-02-27 21:17:13.684
+!MESSAGE Unknown Host: http://mcuxpresso.nxp.com/staticdata/updates/kex_ide_5.0/content.xml
+!STACK 0
+java.net.UnknownHostException: mcuxpresso.nxp.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-02-27 21:17:13.687
+!MESSAGE Connection to http://download.eclipse.org/releases/oxygen/p2.index failed on download.eclipse.org: Temporary failure in name resolution. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org: Temporary failure in name resolution
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-02-27 21:17:13.896
+!MESSAGE Unknown Host: http://download.eclipse.org/releases/oxygen/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SESSION 2019-03-01 09:04:59.623 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.jface 2 0 2019-03-01 09:05:08.486
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-03-01 09:05:08.486
+!MESSAGE A conflict occurred for CTRL+U:
+Binding(CTRL+U,
+	ParameterizedCommand(Command(com.nxp.swtools.clocks.commands.unlockAll,Unlock All Settings,
+		,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@75312c94,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+U,
+	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.commands.Execute,Execute,
+		Evaluate selected text,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@140cfc5f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 4 4 2019-03-01 09:05:09.731
+!MESSAGE Plugin com.nxp.mcuxpresso.trace.core, extension org.eclipse.ui.decorators, id com.nxp.mcuxpresso.trace.core.decorator: Required sub element 'icon' not defined
+
+!ENTRY org.eclipse.ui 4 4 2019-03-01 09:05:09.731
+!MESSAGE Plugin com.nxp.mcuxpresso.trace.core, extension org.eclipse.ui.decorators, id com.nxp.mcuxpresso.trace.core.decorator: Unknown extension tag found: decorator
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-03-01 09:05:11.834
+!MESSAGE Using manifest XSD 'manifest-schema/sdk_manifest_v3.3.xsd' for manifest 'FRDM-KL25Z_manifest.xml'.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-03-01 09:05:11.926
+!MESSAGE Using SDK manifest 'FRDM-KL25Z_manifest.xml'.
+
+!ENTRY org.eclipse.jface.text 2 0 2019-03-01 09:05:14.310
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2019-03-01 09:05:14.310
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-03-01 09:05:14.819
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-03-01 09:05:14.858
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-03-01 09:05:14.858
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.jface.text 2 0 2019-03-01 09:15:48.820
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2019-03-01 09:15:48.821
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY com.crt.log 1 0 2019-03-01 09:17:59.291
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-03-01 09:17:59.293
+!MESSAGE RedlinkServer telnet session connected on port 3025->51804 @ 127.0.0.1
+
+!ENTRY com.crt.debugcommon 4 0 2019-03-01 09:18:02.729
+!MESSAGE Unable to parse ProbeList output to get probe ref count: []
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-03-01 09:22:57.691
+!MESSAGE Using manifest XSD 'manifest-schema/sdk_manifest_v3.3.xsd' for manifest '/usr/local/mcuxpressoide-10.3.0_2200/ide/plugins/com.nxp.mcuxpresso.core.datamodels.resources_10.3.0.201810041206/fragments/ksdk_manifest.xml'.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-03-01 09:22:57.710
+!MESSAGE Using SDK manifest 'ksdk_manifest.xml'.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-03-01 09:22:57.946
+!MESSAGE Using manifest XSD 'manifest-schema/sdk_manifest_v3.3.xsd' for manifest '/usr/local/mcuxpressoide-10.3.0_2200/ide/plugins/com.nxp.mcuxpresso.core.datamodels.resources_10.3.0.201810041206/override/override_manifest.xml'.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-03-01 09:22:57.957
+!MESSAGE Using SDK manifest 'override_manifest.xml'.
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-03-01 09:25:26.499
+!MESSAGE Indexed 'frdmkl25z_driver_examples_tsi_v4_normal' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.crt.log 1 0 2019-03-01 09:52:06.525
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-03-01 09:52:06.527
+!MESSAGE RedlinkServer telnet session connected on port 3025->51910 @ 127.0.0.1
+
+!ENTRY com.crt.debugcommon 4 0 2019-03-01 09:52:09.040
+!MESSAGE Unable to parse ProbeList output to get probe ref count: []
+
+!ENTRY com.nxp.mcuxpresso.trace.core 1 0 2019-03-01 09:53:19.438
+!MESSAGE SWO session connected on port 10224->56340 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10004 2019-03-01 09:53:38.252
+!MESSAGE Failed to execute MI command:
+-data-list-register-values x 14
+Error message from debugger back end:
+Invalid thread id: 1
+!STACK 0
+java.lang.Exception: Invalid thread id: 1
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:943)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:772)
+
+!ENTRY com.nxp.mcuxpresso.trace.core 1 0 2019-03-01 09:53:54.788
+!MESSAGE SWO session connected on port 10224->56358 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10004 2019-03-01 09:54:33.044
+!MESSAGE Failed to execute MI command:
+-data-list-register-values x 14
+Error message from debugger back end:
+Invalid thread id: 1
+!STACK 0
+java.lang.Exception: Invalid thread id: 1
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:943)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:772)
+
+!ENTRY com.nxp.mcuxpresso.trace.core 1 0 2019-03-01 09:55:09.499
+!MESSAGE SWO session connected on port 10224->56376 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10004 2019-03-01 09:55:29.565
+!MESSAGE Failed to execute MI command:
+-data-list-register-values x 14
+Error message from debugger back end:
+Invalid thread id: 1
+!STACK 0
+java.lang.Exception: Invalid thread id: 1
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:943)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:772)
+
+!ENTRY com.nxp.mcuxpresso.trace.core 1 0 2019-03-01 09:56:31.603
+!MESSAGE SWO session connected on port 10224->56394 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10004 2019-03-01 09:57:15.242
+!MESSAGE Failed to execute MI command:
+-data-list-register-values x 14
+Error message from debugger back end:
+Invalid thread id: 1
+!STACK 0
+java.lang.Exception: Invalid thread id: 1
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:943)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:772)
+
+!ENTRY com.nxp.mcuxpresso.trace.core 1 0 2019-03-01 09:59:48.495
+!MESSAGE SWO session connected on port 10224->56422 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10004 2019-03-01 10:00:01.127
+!MESSAGE Failed to execute MI command:
+-data-list-register-values x 14
+Error message from debugger back end:
+Invalid thread id: 1
+!STACK 0
+java.lang.Exception: Invalid thread id: 1
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:943)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:772)
+
+!ENTRY com.nxp.mcuxpresso.trace.core 1 0 2019-03-01 10:00:58.693
+!MESSAGE SWO session connected on port 10224->56440 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10004 2019-03-01 10:01:17.992
+!MESSAGE Failed to execute MI command:
+-data-list-register-values x 14
+Error message from debugger back end:
+Invalid thread id: 1
+!STACK 0
+java.lang.Exception: Invalid thread id: 1
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:943)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:772)
+
+!ENTRY com.nxp.mcuxpresso.trace.core 1 0 2019-03-01 10:03:18.818
+!MESSAGE SWO session connected on port 10224->56460 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10004 2019-03-01 10:03:57.473
+!MESSAGE Failed to execute MI command:
+-data-list-register-values x 14
+Error message from debugger back end:
+Invalid thread id: 1
+!STACK 0
+java.lang.Exception: Invalid thread id: 1
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:943)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:772)
+
+!ENTRY com.nxp.mcuxpresso.trace.core 1 0 2019-03-01 10:04:14.611
+!MESSAGE SWO session connected on port 10224->56478 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10004 2019-03-01 10:04:29.224
+!MESSAGE Failed to execute MI command:
+-data-list-register-values x 14
+Error message from debugger back end:
+Invalid thread id: 1
+!STACK 0
+java.lang.Exception: Invalid thread id: 1
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:943)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:772)
+
+!ENTRY com.nxp.mcuxpresso.trace.core 1 0 2019-03-01 10:04:47.531
+!MESSAGE SWO session connected on port 10224->56496 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10004 2019-03-01 10:05:55.565
+!MESSAGE Failed to execute MI command:
+-data-list-register-values x 14
+Error message from debugger back end:
+Invalid thread id: 1
+!STACK 0
+java.lang.Exception: Invalid thread id: 1
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:943)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:772)
+
+!ENTRY com.nxp.mcuxpresso.trace.core 1 0 2019-03-01 10:06:06.558
+!MESSAGE SWO session connected on port 10224->56514 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10004 2019-03-01 10:06:39.399
+!MESSAGE Failed to execute MI command:
+-data-list-register-values x 14
+Error message from debugger back end:
+Invalid thread id: 1
+!STACK 0
+java.lang.Exception: Invalid thread id: 1
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:943)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:772)
+!SESSION 2019-03-01 14:12:55.803 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.jface 2 0 2019-03-01 14:13:05.549
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-03-01 14:13:05.549
+!MESSAGE A conflict occurred for CTRL+U:
+Binding(CTRL+U,
+	ParameterizedCommand(Command(com.nxp.swtools.clocks.commands.unlockAll,Unlock All Settings,
+		,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@43edd2ea,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+U,
+	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.commands.Execute,Execute,
+		Evaluate selected text,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3fc4038f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 4 4 2019-03-01 14:13:06.831
+!MESSAGE Plugin com.nxp.mcuxpresso.trace.core, extension org.eclipse.ui.decorators, id com.nxp.mcuxpresso.trace.core.decorator: Required sub element 'icon' not defined
+
+!ENTRY org.eclipse.ui 4 4 2019-03-01 14:13:06.831
+!MESSAGE Plugin com.nxp.mcuxpresso.trace.core, extension org.eclipse.ui.decorators, id com.nxp.mcuxpresso.trace.core.decorator: Unknown extension tag found: decorator
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-03-01 14:13:09.430
+!MESSAGE Using manifest XSD 'manifest-schema/sdk_manifest_v3.3.xsd' for manifest 'FRDM-KL25Z_manifest.xml'.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-03-01 14:13:09.516
+!MESSAGE Using SDK manifest 'FRDM-KL25Z_manifest.xml'.
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-03-01 14:13:12.383
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-03-01 14:13:12.388
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-03-01 14:13:12.388
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.jface.text 2 0 2019-03-01 14:13:13.148
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2019-03-01 14:13:13.149
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-03-01 14:15:09.453
+!MESSAGE Using manifest XSD 'manifest-schema/sdk_manifest_v3.3.xsd' for manifest '/usr/local/mcuxpressoide-10.3.0_2200/ide/plugins/com.nxp.mcuxpresso.core.datamodels.resources_10.3.0.201810041206/fragments/ksdk_manifest.xml'.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-03-01 14:15:09.474
+!MESSAGE Using SDK manifest 'ksdk_manifest.xml'.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-03-01 14:15:09.790
+!MESSAGE Using manifest XSD 'manifest-schema/sdk_manifest_v3.3.xsd' for manifest '/usr/local/mcuxpressoide-10.3.0_2200/ide/plugins/com.nxp.mcuxpresso.core.datamodels.resources_10.3.0.201810041206/override/override_manifest.xml'.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2019-03-01 14:15:09.801
+!MESSAGE Using SDK manifest 'override_manifest.xml'.
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-03-01 14:16:28.745
+!MESSAGE Indexed 'MKL25Z128xxx4_Project' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 2 0 2019-03-01 14:16:58.018
+!MESSAGE Overwriting file L/MKL25Z128xxx4_Project/board/RTE_Device.h
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-03-01 14:17:33.350
+!MESSAGE Indexed 'Project_2' (44 sources, 84 headers) in 2.81 sec: 9,630 declarations; 23,858 references; 0 unresolved inclusions; 75 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.crt.log 1 0 2019-03-01 14:20:13.404
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-03-01 14:20:13.406
+!MESSAGE RedlinkServer telnet session connected on port 3025->43302 @ 127.0.0.1
+
+!ENTRY com.crt.debugcommon 4 0 2019-03-01 14:20:15.731
+!MESSAGE Unable to parse ProbeList output to get probe ref count: []
+
+!ENTRY com.nxp.mcuxpresso.trace.core 1 0 2019-03-01 14:20:23.520
+!MESSAGE SWO session connected on port 10224->43640 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10004 2019-03-01 14:21:33.113
+!MESSAGE Failed to execute MI command:
+-data-list-register-values x 14
+Error message from debugger back end:
+Invalid thread id: 1
+!STACK 0
+java.lang.Exception: Invalid thread id: 1
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:943)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:772)
+
+!ENTRY com.nxp.mcuxpresso.trace.core 1 0 2019-03-01 14:23:35.782
+!MESSAGE SWO session connected on port 10224->43660 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10004 2019-03-01 14:23:59.798
+!MESSAGE Failed to execute MI command:
+-data-list-register-values x 14
+Error message from debugger back end:
+Invalid thread id: 1
+!STACK 0
+java.lang.Exception: Invalid thread id: 1
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:943)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:772)
+
+!ENTRY org.eclipse.ui.ide 4 4 2019-03-01 14:27:41.661
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 2 1 2019-03-01 14:27:41.661
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2019-03-01 14:27:41.661
+!MESSAGE The project description file (.project) for 'frdmkl25z_cmsis_driver_examples_uart_dma_transfer' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2019-03-01 14:27:41.661
+!MESSAGE The project description file (.project) for 'frdmkl25z_cmsis_driver_examples_uart_interrupt_transfer' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2019-03-01 14:27:41.661
+!MESSAGE The project description file (.project) for 'frdmkl25z_driver_examples_tsi_v4_normal' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.

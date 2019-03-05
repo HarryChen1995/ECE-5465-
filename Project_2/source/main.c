@@ -52,11 +52,9 @@ uint16_t readings[] = {0, 0};
  ******************************************************************************/
 gpio_pin_config_t config =
 {
-		kGPIO_DigitalOutput,
-		0,
+	kGPIO_DigitalOutput,
+	0,
 };
-
-
 
 
 tpm_pwm_level_select_t pwmLevel = kTPM_LowTrue;
@@ -67,7 +65,6 @@ volatile uint8_t getCharValue = 0U;
 // Called each time the TSI is sampled.
 void TSI0_IRQHandler(void)
 {
-
 	uint8_t absPercentPos= 0U;
     if (TSI_GetMeasuredChannelNumber(TSI0) == BOARD_TSI_ELECTRODE_1)
     {
@@ -96,18 +93,8 @@ void TSI0_IRQHandler(void)
                                    updatedDutycycle);
          	 /* Start channel output with updated dutycycle */
             TPM_UpdateChnlEdgeLevelSelect(BOARD_TPM_BASEADDR, (tpm_chnl_t)BOARD_TPM_CHANNEL, pwmLevel);
-
-
     	}
-
-
-
-
     }
-
-
-
-
 
     /* Clear flags */
     TSI_ClearStatusFlags(TSI0, kTSI_EndOfScanFlag);
@@ -119,18 +106,12 @@ void TSI0_IRQHandler(void)
 
 int main(void)
 {
-
     volatile uint32_t i = 0;
     tsi_config_t tsiConfig_normal = {0};
 
     BOARD_InitPins();
     BOARD_BootClockRUN();
     BOARD_InitDebugConsole();
-
-
-
-
-
 
     lptmr_config_t lptmrConfig;
 	memset((void*)&lptmrConfig, 0, sizeof(lptmrConfig));
@@ -195,8 +176,6 @@ int main(void)
 
         while (1)
         {
-
-
 
 
         }

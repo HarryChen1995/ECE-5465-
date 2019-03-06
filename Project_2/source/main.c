@@ -8,12 +8,6 @@
 #include "MKL25Z4.h"
 #include "fsl_port.h"
 
-#ifdef SERVER
-#include "erpc_server_setup.h"
-#include "erpc_matrix_multiply_server.h"
-#include "erpc_matrix_multiply.h"
-#include "erpc_error_handler.h"
-#endif
 
 #include "pin_mux.h"
 /*******************************************************************************
@@ -37,7 +31,7 @@
 #define TOUCH_DELTA_VALUE 100U
 
 #define BOARD_TPM_BASEADDR TPM2
-#define BOARD_TPM_CHANNEL 1U
+#define BOARD_TPM_CHANNEL 0U
 
 /* Interrupt to enable and flag to read; depends on the TPM channel used */
 #define TPM_CHANNEL_INTERRUPT_ENABLE kTPM_Chnl1InterruptEnable
@@ -122,28 +116,6 @@ int main(void)
     BOARD_BootClockRUN();
     BOARD_InitDebugConsole();
 
-    /* ERPC stuff from demo code */
-    /* SPI transport layer initialization */
-    erpc_transport_t transport;
-
-#if defined(ERPC_BOARD_SPI_BASEADDR)
-    transport = erpc_transport_spi_slave_init((void *)ERPC_BOARD_SPI_BASEADDR, ERPC_BOARD_SPI_BAUDRATE,
-                                                  ERPC_BOARD_SPI_CLK_FREQ);
-#elif defined(ERPC_BOARD_DSPI_BASEADDR)
-    transport = erpc_transport_dspi_slave_init((void *)ERPC_BOARD_DSPI_BASEADDR, ERPC_BOARD_DSPI_BAUDRATE,
-                                               ERPC_BOARD_DSPI_CLK_FREQ);
-#endif
-
-    /* MessageBufferFactory initialization */
-    erpc_mbf_t message_buffer_factory;
-    message_buffer_factory = erpc_mbf_dynamic_init();
-
-    /* eRPC client side initialization */
-    erpc_server_init(transport, message_buffer_factory);
-
-    /* adding the service to the server */
-    erpc_add_service_to_server(create_MatrixMultiplyService_service());
-    /* END ERPC demo stuff */
 
     lptmr_config_t lptmrConfig;
 	memset((void*)&lptmrConfig, 0, sizeof(lptmrConfig));
@@ -204,16 +176,6 @@ int main(void)
 	TPM_StartTimer(BOARD_TPM_BASEADDR, kTPM_SystemClock);
 
     while (1) {
-    	/* ERPC SERVER STUFF */
-    	erpc_status_t status = erpc_server_poll(); //Process message
-
-    	// Error handling stuff
-    	if (status != kErpcStatus_Success) {
-    	    erpc_error_handler(status);
-    	    erpc_server_stop();
-    	    break;
-    	}
-    	/* END ERPC SERVER STUFF */
     }
 }
 

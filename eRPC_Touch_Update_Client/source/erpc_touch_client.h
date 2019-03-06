@@ -28,6 +28,8 @@ extern "C" {
 void erpcTouchUpdate(const uint8_t* percent);
 //@}
 
-
+#if defined(__cplusplus)
+}
+#endif
 
 #endif /* ERPC_TOUCH_CLIENT_H_ */

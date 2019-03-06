@@ -46,4 +46,3 @@ void erpcTouchUpdate(const uint8_t* percent){
 
     return;
 }
-}

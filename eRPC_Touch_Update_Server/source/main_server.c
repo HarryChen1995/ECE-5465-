@@ -113,10 +113,10 @@ void erpcMatrixMultiply(const Matrix *matrix1, const Matrix *matrix2, Matrix *re
 
 void erpcTouchUpdate(const uint8_t* percent){
 	TPM_UpdatePwmDutycycle(BOARD_TPM_BASEADDR, (tpm_chnl_t)BOARD_FIRST_TPM_CHANNEL, kTPM_EdgeAlignedPwm,
-			            		    		 percent );
+			            		    		 *percent );
 	/***update duty cycle ********/
 	TPM_UpdatePwmDutycycle(BOARD_TPM_BASEADDR, (tpm_chnl_t)BOARD_TPM_CHANNEL, kTPM_CenterAlignedPwm,
-	                                   percent);
+	                                   *percent);
 	 /* Start channel output with updated dutycycle */
 	TPM_UpdateChnlEdgeLevelSelect(BOARD_TPM_BASEADDR, (tpm_chnl_t)BOARD_TPM_CHANNEL, pwmLevel);
 }

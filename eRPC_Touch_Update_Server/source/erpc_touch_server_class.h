@@ -41,7 +41,4 @@ erpc_service_t create_TouchUpdateService_service(void);
 }
 #endif
 
-
-
-
 #endif /* ERPC_TOUCH_SERVER_CLASS_H_ */

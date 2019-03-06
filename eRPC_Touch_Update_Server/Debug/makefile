@@ -53,25 +53,25 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: frdmkl25z_multiprocessor_examples_erpc_server_matrix_multiply_spi.axf
+all: eRPC_Touch_Update_Server.axf
 
 # Tool invocations
-frdmkl25z_multiprocessor_examples_erpc_server_matrix_multiply_spi.axf: $(OBJS) $(USER_OBJS)
+eRPC_Touch_Update_Server.axf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU C++ Linker'
-	arm-none-eabi-c++ -nostdlib -g  -Wall  --specs=nano.specs  -fno-common  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -Xlinker -Map="frdmkl25z_multiprocessor_examples_erpc_server_matrix_multiply_spi.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T frdmkl25z_multiprocessor_examples_erpc_server_matrix_multiply_spi_Debug.ld -o "frdmkl25z_multiprocessor_examples_erpc_server_matrix_multiply_spi.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-c++ -nostdlib -g  -Wall  --specs=nano.specs  -fno-common  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -Xlinker -Map="eRPC_Touch_Update_Server.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T "eRPC_Touch_Update_Server_Debug.ld" -o "eRPC_Touch_Update_Server.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build
 
 # Other Targets
 clean:
-	-$(RM) $(CC_DEPS)$(C++_DEPS)$(EXECUTABLES)$(C_UPPER_DEPS)$(CXX_DEPS)$(OBJS)$(CPP_DEPS)$(C_DEPS) frdmkl25z_multiprocessor_examples_erpc_server_matrix_multiply_spi.axf
+	-$(RM) $(CC_DEPS)$(C++_DEPS)$(EXECUTABLES)$(C_UPPER_DEPS)$(CXX_DEPS)$(OBJS)$(CPP_DEPS)$(C_DEPS) eRPC_Touch_Update_Server.axf
 	-@echo ' '
 
 post-build:
 	-@echo 'Performing post-build steps'
-	-arm-none-eabi-size "frdmkl25z_multiprocessor_examples_erpc_server_matrix_multiply_spi.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkl25z_multiprocessor_examples_erpc_server_matrix_multiply_spi.axf" "frdmkl25z_multiprocessor_examples_erpc_server_matrix_multiply_spi.bin" ; # checksum -p MKL25Z128xxx4 -d "frdmkl25z_multiprocessor_examples_erpc_server_matrix_multiply_spi.bin";
+	-arm-none-eabi-size "eRPC_Touch_Update_Server.axf"; # arm-none-eabi-objcopy -v -O binary "eRPC_Touch_Update_Server.axf" "eRPC_Touch_Update_Server.bin" ; # checksum -p MKL25Z128xxx4 -d "eRPC_Touch_Update_Server.bin";
 	-@echo ' '
 
 .PHONY: all clean dependents post-build

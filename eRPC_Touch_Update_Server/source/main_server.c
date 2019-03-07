@@ -166,8 +166,6 @@ int main()
 
     /* eRPC client side initialization */
     erpc_server_init(transport, message_buffer_factory);
-
-    /* adding the service to the server */
     erpc_add_service_to_server(create_MatrixMultiplyService_service());
 
     while (1)
@@ -178,13 +176,8 @@ int main()
         /* handle error status */
         if (status != kErpcStatus_Success)
         {
-            /* print error description */
             erpc_error_handler(status);
-
-            /* stop erpc server */
             erpc_server_stop();
-
-            /* exit program loop */
             break;
         }
 
@@ -194,7 +187,5 @@ int main()
         {
         }
     }
-    while (1)
-    {
-    }
+    return 0;
 }

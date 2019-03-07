@@ -196,11 +196,10 @@ int main()
 
     /* eRPC client side initialization */
     erpc_client_init(transport, message_buffer_factory);
-
-    /* Set default error handler */
     erpc_client_set_error_handler(erpc_error_handler);
 
     while (1)
     {
     }
+    return 0;
 }

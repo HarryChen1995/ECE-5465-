@@ -200,6 +200,7 @@ int main()
 
     while (1)
     {
+    	__WFI(); //TODO validate
     }
     return 0;
 }

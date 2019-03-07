@@ -76,41 +76,6 @@ volatile uint8_t getCharValue = 0U;
  * Code
  ******************************************************************************/
 
-/*!
- * @brief erpcMatrixMultiply function implementation.
- *
- * This is the implementation of the erpcMatrixMultiply function called by the primary core.
- *
- * @param matrix1 First matrix
- * @param matrix2 Second matrix
- * @param result_matrix Result matrix
- */
-void erpcMatrixMultiply(const Matrix *matrix1, const Matrix *matrix2, Matrix *result_matrix)
-{
-    int32_t i, j, k;
-
-    /* Clear the result matrix */
-    for (i = 0; i < matrix_size; ++i)
-    {
-        for (j = 0; j < matrix_size; ++j)
-        {
-            (*result_matrix)[i][j] = 0;
-        }
-    }
-
-    /* Multiply two matrices */
-    for (i = 0; i < matrix_size; ++i)
-    {
-        for (j = 0; j < matrix_size; ++j)
-        {
-            for (k = 0; k < matrix_size; ++k)
-            {
-                (*result_matrix)[i][j] += (*matrix1)[i][k] * (*matrix2)[k][j];
-            }
-        }
-    }
-}
-
 void erpcTouchUpdate(const uint8_t* percent){
 	TPM_UpdatePwmDutycycle(BOARD_TPM_BASEADDR, (tpm_chnl_t)BOARD_FIRST_TPM_CHANNEL, kTPM_EdgeAlignedPwm,
 			            		    		 *percent );
@@ -166,7 +131,7 @@ int main()
 
     /* eRPC client side initialization */
     erpc_server_init(transport, message_buffer_factory);
-    erpc_add_service_to_server(create_MatrixMultiplyService_service());
+    erpc_add_service_to_server(create_TouchUpdateService_service());
 
     while (1)
     {

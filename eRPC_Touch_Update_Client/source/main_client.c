@@ -118,7 +118,7 @@ void TSI0_IRQHandler(void)
 		    updatedDutycycle=absPercentPos;
 
 		    //send request to server
-		    //erpcTouchUpdate(&absPercentPos);
+		    erpcTouchUpdate(&absPercentPos);
 
 			PRINTF("Distance Percentage: %d\n", absPercentPos);
 			/*************disable channel output before updating duty cycle*********/

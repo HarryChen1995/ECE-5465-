@@ -28,16 +28,15 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+#include <erpc_touch_update.h>
+#include <erpc_touch_update_server.h>
 #include "board.h"
 #include "erpc_server_setup.h"
-#include "erpc_matrix_multiply_server.h"
-#include "erpc_matrix_multiply.h"
 #include "erpc_error_handler.h"
 #include "fsl_tsi_v4.h"
 #include "fsl_lptmr.h"
 #include "fsl_tpm.h"
 #include "clock_config.h"
-#include "pin_mux.h"
 #include "MKL25Z4.h"
 #include "fsl_port.h"
 
@@ -76,7 +75,7 @@ volatile uint8_t getCharValue = 0U;
  * Code
  ******************************************************************************/
 
-void erpcTouchUpdate(const uint8_t* percent){
+void erpcTouchUpdate(number percent){
 	TPM_UpdatePwmDutycycle(BOARD_TPM_BASEADDR, (tpm_chnl_t)BOARD_FIRST_TPM_CHANNEL, kTPM_EdgeAlignedPwm,
 			            		    		 *percent );
 	/***update duty cycle ********/

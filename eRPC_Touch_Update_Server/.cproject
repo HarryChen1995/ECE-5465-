@@ -180,22 +180,12 @@
 									<listOptionValue builtIn="false" value="../drivers"/>
 									<listOptionValue builtIn="false" value="../CMSIS"/>
 									<listOptionValue builtIn="false" value="../utilities"/>
-									<listOptionValue builtIn="false" value="../eRPC_spi_slave_c_wrapper"/>
-									<listOptionValue builtIn="false" value="../eRPC_spi_slave_transport"/>
-									<listOptionValue builtIn="false" value="../eRPC_spi_slave_transport/erpc/infra"/>
-									<listOptionValue builtIn="false" value="../eRPC_spi_slave_transport/erpc/transports"/>
-									<listOptionValue builtIn="false" value="../eRPC_server"/>
-									<listOptionValue builtIn="false" value="../eRPC_server/erpc/infra"/>
-									<listOptionValue builtIn="false" value="../eRPC_server/erpc/setup"/>
-									<listOptionValue builtIn="false" value="../eRPC_port_stdlib"/>
-									<listOptionValue builtIn="false" value="../eRPC_port_stdlib/erpc/port"/>
-									<listOptionValue builtIn="false" value="../eRPC_includes"/>
-									<listOptionValue builtIn="false" value="../eRPC_includes/erpc/infra"/>
-									<listOptionValue builtIn="false" value="../eRPC_includes/erpc/setup"/>
-									<listOptionValue builtIn="false" value="../eRPC_common_src"/>
 									<listOptionValue builtIn="false" value="../startup"/>
-									<listOptionValue builtIn="false" value="../erpc/service"/>
 									<listOptionValue builtIn="false" value="../erpc"/>
+									<listOptionValue builtIn="false" value="../port"/>
+									<listOptionValue builtIn="false" value="../infra"/>
+									<listOptionValue builtIn="false" value="../setup"/>
+									<listOptionValue builtIn="false" value="../transports"/>
 								</option>
 								<option id="gnu.both.asm.option.warnings.nowarn.394521075" name="Suppress warnings (-W)" superClass="gnu.both.asm.option.warnings.nowarn"/>
 								<option id="gnu.both.asm.option.version.1934277612" name="Announce version (-v)" superClass="gnu.both.asm.option.version"/>
@@ -321,16 +311,15 @@
 					<sourceEntries>
 						<entry flags="LOCAL|VALUE_WORKSPACE_PATH" kind="sourcePath" name="CMSIS"/>
 						<entry flags="LOCAL|VALUE_WORKSPACE_PATH" kind="sourcePath" name="board"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="config"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="drivers"/>
-						<entry flags="LOCAL|VALUE_WORKSPACE_PATH" kind="sourcePath" name="eRPC_common_src"/>
-						<entry flags="LOCAL|VALUE_WORKSPACE_PATH" kind="sourcePath" name="eRPC_includes"/>
-						<entry flags="LOCAL|VALUE_WORKSPACE_PATH" kind="sourcePath" name="eRPC_port_stdlib"/>
-						<entry flags="LOCAL|VALUE_WORKSPACE_PATH" kind="sourcePath" name="eRPC_server"/>
-						<entry flags="LOCAL|VALUE_WORKSPACE_PATH" kind="sourcePath" name="eRPC_spi_slave_c_wrapper"/>
-						<entry flags="LOCAL|VALUE_WORKSPACE_PATH" kind="sourcePath" name="eRPC_spi_slave_transport"/>
-						<entry flags="LOCAL|VALUE_WORKSPACE_PATH" kind="sourcePath" name="erpc"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="erpc_c"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="infra"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="port"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="setup"/>
 						<entry flags="LOCAL|VALUE_WORKSPACE_PATH" kind="sourcePath" name="source"/>
 						<entry flags="LOCAL|VALUE_WORKSPACE_PATH" kind="sourcePath" name="startup"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="transports"/>
 						<entry flags="LOCAL|VALUE_WORKSPACE_PATH" kind="sourcePath" name="utilities"/>
 					</sourceEntries>
 				</configuration>
@@ -425,8 +414,8 @@
 								<option id="com.crt.advproject.cpp.hdrlib.1512153355" name="Library headers" superClass="com.crt.advproject.cpp.hdrlib" value="com.crt.advproject.cpp.hdrlib.newlib" valueType="enumerated"/>
 								<option id="com.crt.advproject.cpp.config.1027521753" name="Obsolete (Config)" superClass="com.crt.advproject.cpp.config"/>
 								<option id="com.crt.advproject.cpp.store.81082225" name="Obsolete (Store)" superClass="com.crt.advproject.cpp.store"/>
-								<option id="com.crt.advproject.cpp.exe.release.option.optimization.level.1173782310" superClass="com.crt.advproject.cpp.exe.release.option.optimization.level"/>
-								<option id="com.crt.advproject.cpp.exe.release.option.debugging.level.1686488346" superClass="com.crt.advproject.cpp.exe.release.option.debugging.level"/>
+								<option id="com.crt.advproject.cpp.exe.release.option.optimization.level.1173782310" name="Optimization Level" superClass="com.crt.advproject.cpp.exe.release.option.optimization.level"/>
+								<option id="com.crt.advproject.cpp.exe.release.option.debugging.level.1686488346" name="Debug Level" superClass="com.crt.advproject.cpp.exe.release.option.debugging.level"/>
 								<inputType id="com.crt.advproject.compiler.cpp.input.514715634" superClass="com.crt.advproject.compiler.cpp.input"/>
 							</tool>
 							<tool id="com.crt.advproject.gcc.exe.release.1443488819" name="MCU C Compiler" superClass="com.crt.advproject.gcc.exe.release">
@@ -502,7 +491,7 @@
 								<option id="com.crt.advproject.gcc.securestate.2077637969" name="TrustZone Project Type" superClass="com.crt.advproject.gcc.securestate"/>
 								<option id="com.crt.advproject.gcc.config.1414065760" name="Obsolete (Config)" superClass="com.crt.advproject.gcc.config"/>
 								<option id="com.crt.advproject.gcc.store.1602598588" name="Obsolete (Store)" superClass="com.crt.advproject.gcc.store"/>
-								<option id="com.crt.advproject.gcc.exe.release.option.optimization.level.324915485" superClass="com.crt.advproject.gcc.exe.release.option.optimization.level"/>
+								<option id="com.crt.advproject.gcc.exe.release.option.optimization.level.324915485" name="Optimization Level" superClass="com.crt.advproject.gcc.exe.release.option.optimization.level"/>
 								<inputType id="com.crt.advproject.compiler.input.1179003167" superClass="com.crt.advproject.compiler.input"/>
 							</tool>
 							<tool id="com.crt.advproject.gas.exe.release.1316960076" name="MCU Assembler" superClass="com.crt.advproject.gas.exe.release">
@@ -541,7 +530,7 @@
 								<option id="com.crt.advproject.gas.thumbinterwork.1706434574" name="Enable Thumb interworking" superClass="com.crt.advproject.gas.thumbinterwork"/>
 								<option id="com.crt.advproject.gas.config.1212728848" name="Obsolete (Config)" superClass="com.crt.advproject.gas.config"/>
 								<option id="com.crt.advproject.gas.store.2111491620" name="Obsolete (Store)" superClass="com.crt.advproject.gas.store"/>
-								<option id="com.crt.advproject.gas.debug.583595635" superClass="com.crt.advproject.gas.debug"/>
+								<option id="com.crt.advproject.gas.debug.583595635" name="Debug level" superClass="com.crt.advproject.gas.debug"/>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.913401889" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 								<inputType id="com.crt.advproject.assembler.input.52883952" name="Additional Assembly Source Files" superClass="com.crt.advproject.assembler.input"/>
 							</tool>
@@ -652,22 +641,21 @@
 								<option id="com.crt.advproject.link.securestate.664390713" name="TrustZone Project Type" superClass="com.crt.advproject.link.securestate"/>
 							</tool>
 							<tool id="com.crt.advproject.tool.debug.release.2098893782" name="MCU Debugger" superClass="com.crt.advproject.tool.debug.release">
-								<option id="com.crt.advproject.linkserver.debug.prevent.release.491760771" superClass="com.crt.advproject.linkserver.debug.prevent.release"/>
+								<option id="com.crt.advproject.linkserver.debug.prevent.release.491760771" name="Prevent Debugging" superClass="com.crt.advproject.linkserver.debug.prevent.release"/>
 							</tool>
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="LOCAL|VALUE_WORKSPACE_PATH" kind="sourcePath" name="CMSIS"/>
 						<entry flags="LOCAL|VALUE_WORKSPACE_PATH" kind="sourcePath" name="board"/>
-						<entry flags="LOCAL|VALUE_WORKSPACE_PATH" kind="sourcePath" name="eRPC_common_src"/>
-						<entry flags="LOCAL|VALUE_WORKSPACE_PATH" kind="sourcePath" name="eRPC_includes"/>
-						<entry flags="LOCAL|VALUE_WORKSPACE_PATH" kind="sourcePath" name="eRPC_port_stdlib"/>
-						<entry flags="LOCAL|VALUE_WORKSPACE_PATH" kind="sourcePath" name="eRPC_server"/>
-						<entry flags="LOCAL|VALUE_WORKSPACE_PATH" kind="sourcePath" name="eRPC_spi_slave_c_wrapper"/>
-						<entry flags="LOCAL|VALUE_WORKSPACE_PATH" kind="sourcePath" name="eRPC_spi_slave_transport"/>
-						<entry flags="LOCAL|VALUE_WORKSPACE_PATH" kind="sourcePath" name="erpc"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="config"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="erpc_c"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="infra"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="port"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="setup"/>
 						<entry flags="LOCAL|VALUE_WORKSPACE_PATH" kind="sourcePath" name="source"/>
 						<entry flags="LOCAL|VALUE_WORKSPACE_PATH" kind="sourcePath" name="startup"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="transports"/>
 						<entry flags="LOCAL|VALUE_WORKSPACE_PATH" kind="sourcePath" name="utilities"/>
 					</sourceEntries>
 				</configuration>
@@ -679,101 +667,136 @@
 		<project id="frdmkl25z_multiprocessor_examples_erpc_server_matrix_multiply_spi.null.1561118363" name="frdmkl25z_multiprocessor_examples_erpc_server_matrix_multiply_spi" projectType="com.crt.advproject.projecttype.exe"/>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
-	<storageModule moduleId="scannerConfiguration">
-		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.exe.release.1383033847;com.crt.advproject.config.exe.release.1383033847.;com.crt.advproject.gcc.exe.release.1443488819;com.crt.advproject.compiler.input.1179003167">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.exe.debug.1280614718;com.crt.advproject.config.exe.debug.1280614718.;com.crt.advproject.cpp.exe.debug.2108053519;com.crt.advproject.compiler.cpp.input.271236148">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfileCPP"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.exe.release.1383033847;com.crt.advproject.config.exe.release.1383033847.;com.crt.advproject.gas.exe.release.1316960076;com.crt.advproject.assembler.input.52883952">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.exe.release.1383033847;com.crt.advproject.config.exe.release.1383033847.;com.crt.advproject.cpp.exe.release.295767367;com.crt.advproject.compiler.cpp.input.514715634">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfileCPP"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.exe.debug.1280614718;com.crt.advproject.config.exe.debug.1280614718.;com.crt.advproject.gcc.exe.debug.1640993389;com.crt.advproject.compiler.input.616959849">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.exe.debug.1280614718;com.crt.advproject.config.exe.debug.1280614718.;com.crt.advproject.gas.exe.debug.740979830;com.crt.advproject.assembler.input.897842148">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
-		</scannerConfigBuildInfo>
-	</storageModule>
 	<storageModule moduleId="com.crt.config">
 		<projectStorage>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&#13;
-&lt;TargetConfig&gt;&#13;
-&lt;Properties property_3="NXP" property_4="MKL25Z128xxx4" property_count="5" version="100200"/&gt;&#13;
-&lt;infoList vendor="NXP"&gt;&#13;
-&lt;info chip="MKL25Z128xxx4" name="MKL25Z128xxx4"&gt;&#13;
-&lt;chip&gt;&#13;
-&lt;name&gt;MKL25Z128xxx4&lt;/name&gt;&#13;
-&lt;family&gt;KL2x&lt;/family&gt;&#13;
-&lt;vendor&gt;NXP&lt;/vendor&gt;&#13;
-&lt;memory can_program="true" id="Flash" is_ro="true" size="0" type="Flash"/&gt;&#13;
-&lt;memory id="RAM" size="0" type="RAM"/&gt;&#13;
-&lt;memoryInstance derived_from="Flash" driver="FTFA_1K.cfx" id="PROGRAM_FLASH" location="0x00000000" size="0x00020000"/&gt;&#13;
-&lt;memoryInstance derived_from="RAM" id="SRAM" location="0x1ffff000" size="0x00004000"/&gt;&#13;
-&lt;peripheralInstance derived_from="FTFA-FlashConfig" determined="infoFile" id="FTFA-FlashConfig" location="0x400"/&gt;&#13;
-&lt;peripheralInstance derived_from="DMA" determined="infoFile" id="DMA" location="0x40008000"/&gt;&#13;
-&lt;peripheralInstance derived_from="FTFA" determined="infoFile" id="FTFA" location="0x40020000"/&gt;&#13;
-&lt;peripheralInstance derived_from="DMAMUX0" determined="infoFile" id="DMAMUX0" location="0x40021000"/&gt;&#13;
-&lt;peripheralInstance derived_from="PIT" determined="infoFile" id="PIT" location="0x40037000"/&gt;&#13;
-&lt;peripheralInstance derived_from="TPM0" determined="infoFile" id="TPM0" location="0x40038000"/&gt;&#13;
-&lt;peripheralInstance derived_from="TPM1" determined="infoFile" id="TPM1" location="0x40039000"/&gt;&#13;
-&lt;peripheralInstance derived_from="TPM2" determined="infoFile" id="TPM2" location="0x4003A000"/&gt;&#13;
-&lt;peripheralInstance derived_from="ADC0" determined="infoFile" id="ADC0" location="0x4003B000"/&gt;&#13;
-&lt;peripheralInstance derived_from="RTC" determined="infoFile" id="RTC" location="0x4003D000"/&gt;&#13;
-&lt;peripheralInstance derived_from="DAC0" determined="infoFile" id="DAC0" location="0x4003F000"/&gt;&#13;
-&lt;peripheralInstance derived_from="LPTMR0" determined="infoFile" id="LPTMR0" location="0x40040000"/&gt;&#13;
-&lt;peripheralInstance derived_from="TSI0" determined="infoFile" id="TSI0" location="0x40045000"/&gt;&#13;
-&lt;peripheralInstance derived_from="SIM" determined="infoFile" id="SIM" location="0x40047000"/&gt;&#13;
-&lt;peripheralInstance derived_from="PORTA" determined="infoFile" id="PORTA" location="0x40049000"/&gt;&#13;
-&lt;peripheralInstance derived_from="PORTB" determined="infoFile" id="PORTB" location="0x4004A000"/&gt;&#13;
-&lt;peripheralInstance derived_from="PORTC" determined="infoFile" id="PORTC" location="0x4004B000"/&gt;&#13;
-&lt;peripheralInstance derived_from="PORTD" determined="infoFile" id="PORTD" location="0x4004C000"/&gt;&#13;
-&lt;peripheralInstance derived_from="PORTE" determined="infoFile" id="PORTE" location="0x4004D000"/&gt;&#13;
-&lt;peripheralInstance derived_from="MCG" determined="infoFile" id="MCG" location="0x40064000"/&gt;&#13;
-&lt;peripheralInstance derived_from="OSC0" determined="infoFile" id="OSC0" location="0x40065000"/&gt;&#13;
-&lt;peripheralInstance derived_from="I2C0" determined="infoFile" id="I2C0" location="0x40066000"/&gt;&#13;
-&lt;peripheralInstance derived_from="I2C1" determined="infoFile" id="I2C1" location="0x40067000"/&gt;&#13;
-&lt;peripheralInstance derived_from="UART0" determined="infoFile" id="UART0" location="0x4006A000"/&gt;&#13;
-&lt;peripheralInstance derived_from="UART1" determined="infoFile" id="UART1" location="0x4006B000"/&gt;&#13;
-&lt;peripheralInstance derived_from="UART2" determined="infoFile" id="UART2" location="0x4006C000"/&gt;&#13;
-&lt;peripheralInstance derived_from="USB0" determined="infoFile" id="USB0" location="0x40072000"/&gt;&#13;
-&lt;peripheralInstance derived_from="CMP0" determined="infoFile" id="CMP0" location="0x40073000"/&gt;&#13;
-&lt;peripheralInstance derived_from="SPI0" determined="infoFile" id="SPI0" location="0x40076000"/&gt;&#13;
-&lt;peripheralInstance derived_from="SPI1" determined="infoFile" id="SPI1" location="0x40077000"/&gt;&#13;
-&lt;peripheralInstance derived_from="LLWU" determined="infoFile" id="LLWU" location="0x4007C000"/&gt;&#13;
-&lt;peripheralInstance derived_from="PMC" determined="infoFile" id="PMC" location="0x4007D000"/&gt;&#13;
-&lt;peripheralInstance derived_from="SMC" determined="infoFile" id="SMC" location="0x4007E000"/&gt;&#13;
-&lt;peripheralInstance derived_from="RCM" determined="infoFile" id="RCM" location="0x4007F000"/&gt;&#13;
-&lt;peripheralInstance derived_from="GPIOA" determined="infoFile" id="GPIOA" location="0x400FF000"/&gt;&#13;
-&lt;peripheralInstance derived_from="GPIOB" determined="infoFile" id="GPIOB" location="0x400FF040"/&gt;&#13;
-&lt;peripheralInstance derived_from="GPIOC" determined="infoFile" id="GPIOC" location="0x400FF080"/&gt;&#13;
-&lt;peripheralInstance derived_from="GPIOD" determined="infoFile" id="GPIOD" location="0x400FF0C0"/&gt;&#13;
-&lt;peripheralInstance derived_from="GPIOE" determined="infoFile" id="GPIOE" location="0x400FF100"/&gt;&#13;
-&lt;peripheralInstance derived_from="SystemControl" determined="infoFile" id="SystemControl" location="0xE000E000"/&gt;&#13;
-&lt;peripheralInstance derived_from="SysTick" determined="infoFile" id="SysTick" location="0xE000E010"/&gt;&#13;
-&lt;peripheralInstance derived_from="NVIC" determined="infoFile" id="NVIC" location="0xE000E100"/&gt;&#13;
-&lt;peripheralInstance derived_from="MTB" determined="infoFile" id="MTB" location="0xF0000000"/&gt;&#13;
-&lt;peripheralInstance derived_from="MTBDWT" determined="infoFile" id="MTBDWT" location="0xF0001000"/&gt;&#13;
-&lt;peripheralInstance derived_from="ROM" determined="infoFile" id="ROM" location="0xF0002000"/&gt;&#13;
-&lt;peripheralInstance derived_from="MCM" determined="infoFile" id="MCM" location="0xF0003000"/&gt;&#13;
-&lt;peripheralInstance derived_from="FGPIOA" determined="infoFile" id="FGPIOA" location="0xF80FF000"/&gt;&#13;
-&lt;peripheralInstance derived_from="FGPIOB" determined="infoFile" id="FGPIOB" location="0xF80FF040"/&gt;&#13;
-&lt;peripheralInstance derived_from="FGPIOC" determined="infoFile" id="FGPIOC" location="0xF80FF080"/&gt;&#13;
-&lt;peripheralInstance derived_from="FGPIOD" determined="infoFile" id="FGPIOD" location="0xF80FF0C0"/&gt;&#13;
-&lt;peripheralInstance derived_from="FGPIOE" determined="infoFile" id="FGPIOE" location="0xF80FF100"/&gt;&#13;
-&lt;/chip&gt;&#13;
-&lt;processor&gt;&#13;
-&lt;name gcc_name="cortex-m0plus"&gt;Cortex-M0+&lt;/name&gt;&#13;
-&lt;family&gt;Cortex-M&lt;/family&gt;&#13;
-&lt;/processor&gt;&#13;
-&lt;link href="MKL25Z4_internal_peripheral.xml" show="embed" type="simple"/&gt;&#13;
-&lt;/info&gt;&#13;
-&lt;/infoList&gt;&#13;
-&lt;/TargetConfig&gt;</projectStorage>
+			&lt;TargetConfig&gt;&#13;
+			&lt;Properties property_3="NXP" property_4="MKL25Z128xxx4" property_count="5"
+			version="100200"/&gt;&#13;
+			&lt;infoList vendor="NXP"&gt;&#13;
+			&lt;info chip="MKL25Z128xxx4" name="MKL25Z128xxx4"&gt;&#13;
+			&lt;chip&gt;&#13;
+			&lt;name&gt;MKL25Z128xxx4&lt;/name&gt;&#13;
+			&lt;family&gt;KL2x&lt;/family&gt;&#13;
+			&lt;vendor&gt;NXP&lt;/vendor&gt;&#13;
+			&lt;memory can_program="true" id="Flash" is_ro="true" size="0"
+			type="Flash"/&gt;&#13;
+			&lt;memory id="RAM" size="0" type="RAM"/&gt;&#13;
+			&lt;memoryInstance derived_from="Flash" driver="FTFA_1K.cfx" id="PROGRAM_FLASH"
+			location="0x00000000" size="0x00020000"/&gt;&#13;
+			&lt;memoryInstance derived_from="RAM" id="SRAM" location="0x1ffff000"
+			size="0x00004000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="FTFA-FlashConfig" determined="infoFile"
+			id="FTFA-FlashConfig" location="0x400"/&gt;&#13;
+			&lt;peripheralInstance derived_from="DMA" determined="infoFile"
+			id="DMA" location="0x40008000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="FTFA" determined="infoFile" id="FTFA"
+			location="0x40020000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="DMAMUX0" determined="infoFile" id="DMAMUX0"
+			location="0x40021000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="PIT" determined="infoFile" id="PIT"
+			location="0x40037000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="TPM0" determined="infoFile" id="TPM0"
+			location="0x40038000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="TPM1" determined="infoFile" id="TPM1"
+			location="0x40039000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="TPM2" determined="infoFile" id="TPM2"
+			location="0x4003A000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="ADC0" determined="infoFile" id="ADC0"
+			location="0x4003B000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="RTC" determined="infoFile" id="RTC"
+			location="0x4003D000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="DAC0" determined="infoFile" id="DAC0"
+			location="0x4003F000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="LPTMR0" determined="infoFile" id="LPTMR0"
+			location="0x40040000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="TSI0" determined="infoFile" id="TSI0"
+			location="0x40045000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="SIM" determined="infoFile" id="SIM"
+			location="0x40047000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="PORTA" determined="infoFile" id="PORTA"
+			location="0x40049000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="PORTB" determined="infoFile" id="PORTB"
+			location="0x4004A000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="PORTC" determined="infoFile" id="PORTC"
+			location="0x4004B000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="PORTD" determined="infoFile" id="PORTD"
+			location="0x4004C000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="PORTE" determined="infoFile" id="PORTE"
+			location="0x4004D000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="MCG" determined="infoFile" id="MCG"
+			location="0x40064000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="OSC0" determined="infoFile" id="OSC0"
+			location="0x40065000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="I2C0" determined="infoFile" id="I2C0"
+			location="0x40066000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="I2C1" determined="infoFile" id="I2C1"
+			location="0x40067000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="UART0" determined="infoFile" id="UART0"
+			location="0x4006A000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="UART1" determined="infoFile" id="UART1"
+			location="0x4006B000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="UART2" determined="infoFile" id="UART2"
+			location="0x4006C000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="USB0" determined="infoFile" id="USB0"
+			location="0x40072000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="CMP0" determined="infoFile" id="CMP0"
+			location="0x40073000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="SPI0" determined="infoFile" id="SPI0"
+			location="0x40076000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="SPI1" determined="infoFile" id="SPI1"
+			location="0x40077000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="LLWU" determined="infoFile" id="LLWU"
+			location="0x4007C000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="PMC" determined="infoFile" id="PMC"
+			location="0x4007D000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="SMC" determined="infoFile" id="SMC"
+			location="0x4007E000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="RCM" determined="infoFile" id="RCM"
+			location="0x4007F000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="GPIOA" determined="infoFile" id="GPIOA"
+			location="0x400FF000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="GPIOB" determined="infoFile" id="GPIOB"
+			location="0x400FF040"/&gt;&#13;
+			&lt;peripheralInstance derived_from="GPIOC" determined="infoFile" id="GPIOC"
+			location="0x400FF080"/&gt;&#13;
+			&lt;peripheralInstance derived_from="GPIOD" determined="infoFile" id="GPIOD"
+			location="0x400FF0C0"/&gt;&#13;
+			&lt;peripheralInstance derived_from="GPIOE" determined="infoFile" id="GPIOE"
+			location="0x400FF100"/&gt;&#13;
+			&lt;peripheralInstance derived_from="SystemControl" determined="infoFile"
+			id="SystemControl" location="0xE000E000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="SysTick" determined="infoFile"
+			id="SysTick" location="0xE000E010"/&gt;&#13;
+			&lt;peripheralInstance derived_from="NVIC" determined="infoFile" id="NVIC"
+			location="0xE000E100"/&gt;&#13;
+			&lt;peripheralInstance derived_from="MTB" determined="infoFile" id="MTB"
+			location="0xF0000000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="MTBDWT" determined="infoFile" id="MTBDWT"
+			location="0xF0001000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="ROM" determined="infoFile" id="ROM"
+			location="0xF0002000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="MCM" determined="infoFile" id="MCM"
+			location="0xF0003000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="FGPIOA" determined="infoFile" id="FGPIOA"
+			location="0xF80FF000"/&gt;&#13;
+			&lt;peripheralInstance derived_from="FGPIOB" determined="infoFile" id="FGPIOB"
+			location="0xF80FF040"/&gt;&#13;
+			&lt;peripheralInstance derived_from="FGPIOC" determined="infoFile" id="FGPIOC"
+			location="0xF80FF080"/&gt;&#13;
+			&lt;peripheralInstance derived_from="FGPIOD" determined="infoFile" id="FGPIOD"
+			location="0xF80FF0C0"/&gt;&#13;
+			&lt;peripheralInstance derived_from="FGPIOE" determined="infoFile" id="FGPIOE"
+			location="0xF80FF100"/&gt;&#13;
+			&lt;/chip&gt;&#13;
+			&lt;processor&gt;&#13;
+			&lt;name gcc_name="cortex-m0plus"&gt;Cortex-M0+&lt;/name&gt;&#13;
+			&lt;family&gt;Cortex-M&lt;/family&gt;&#13;
+			&lt;/processor&gt;&#13;
+			&lt;link href="MKL25Z4_internal_peripheral.xml" show="embed"
+			type="simple"/&gt;&#13;
+			&lt;/info&gt;&#13;
+			&lt;/infoList&gt;&#13;
+			&lt;/TargetConfig&gt;</projectStorage>
 	</storageModule>
 	<storageModule moduleId="com.nxp.mcuxpresso.core.datamodels">
 		<sdkName>SDK_2.x_FRDM-KL25Z</sdkName>
@@ -785,6 +808,35 @@
 		<core>cm0plus</core>
 		<coreId>core0_MKL25Z128xxx4</coreId>
 	</storageModule>
-	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/eRPC_Touch_Update_Server"/>
+		</configuration>
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/eRPC_Touch_Update_Server"/>
+		</configuration>
+	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.exe.debug.1280614718;com.crt.advproject.config.exe.debug.1280614718.;com.crt.advproject.cpp.exe.debug.2108053519;com.crt.advproject.compiler.cpp.input.271236148">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfileCPP"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.exe.debug.1280614718;com.crt.advproject.config.exe.debug.1280614718.;com.crt.advproject.gas.exe.debug.740979830;com.crt.advproject.assembler.input.897842148">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.exe.release.1383033847;com.crt.advproject.config.exe.release.1383033847.;com.crt.advproject.cpp.exe.release.295767367;com.crt.advproject.compiler.cpp.input.514715634">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfileCPP"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.exe.release.1383033847;com.crt.advproject.config.exe.release.1383033847.;com.crt.advproject.gcc.exe.release.1443488819;com.crt.advproject.compiler.input.1179003167">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.exe.release.1383033847;com.crt.advproject.config.exe.release.1383033847.;com.crt.advproject.gas.exe.release.1316960076;com.crt.advproject.assembler.input.52883952">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.exe.debug.1280614718;com.crt.advproject.config.exe.debug.1280614718.;com.crt.advproject.gcc.exe.debug.1640993389;com.crt.advproject.compiler.input.616959849">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 </cproject>

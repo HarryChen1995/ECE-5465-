@@ -1,39 +1,33 @@
-//#include <SPI.h>
+#include <SPI.h>
 
-int MOSI = 11;
-int MISO = 12;
-int SCK = 13;
-float wait_time = 1.0 / 9600.0;
+char buff[256];
 
 void setup() {
+  // Start serial port to get data
+  // TODO: replace with ESP / Alexa stuff
   Serial.begin(9600);
-  pinMode(MOSI, OUTPUT);
-  pinMode(MISO, INPUT);
-  pinMode(SCK, OUTPUT);
-  digitalWrite(SCK, HIGH);
+
+  // Setup the SPI port
+  SPI.begin();
+  SPI.setClockDivider(SPI_CLOCK_DIV_8);
+  digitalWrite(SS, HIGH);
 }
 
 void loop() {
-  // Read in data from the PC application
+  // Fill the buffer with zeros
+  for(int i-0; i<256; i++){
+    buff[i] = 0;
+  }
+  
+  // Read in data from the serial port
+  // TODO: Replace with however we get data from Alexa
   while (!Serial.available()) {}
-  char buff[256];
   Serial.readBytes(buff, 256);
 
-  // Pass data to board via bit-bang SPI
-  send_spi(buff, 256);
-}
-
-int send_spi(char* buff, int len) {
-  // Iterate over bytes
-  int i;
-  for(i=0; i < len; i++){
-    // Iterate over bits
-    int b;
-    for(b=0; b < 8; b+=2){
-      digitalWrite(SCK, LOW);
-      digitalWrite(MOSI, (buff[i] >> b) & 0x01);
-      digitalWrite(SCK, HIGH);
-      digitalWrite(MOSI, (buff[i] >> (b+1)) & 0x01);
-    }
-  }
+  // Pass data to board via SPI
+  SPI.beginTransaction(SPISettings(1000000, MSBFIRST, SPI_MODE0));
+  digitalWrite(SS, LOW);
+  SPI.transfer(buff, 256); // If we are returning any data it is stored in buff as the data is written out
+  digitalWrite(SS, HIGH);
+  SPI.endTransaction();
 }

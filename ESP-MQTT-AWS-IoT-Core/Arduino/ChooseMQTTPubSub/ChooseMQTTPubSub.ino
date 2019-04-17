@@ -13,6 +13,7 @@
 //Follow instructions from https://github.com/debsahu/ESP-MQTT-AWS-IoT-Core/blob/master/doc/README.md
 //Enter values in secrets.h ▼
 #include "secrets.h"
+#include <SPI.h>
 
 #ifndef PIO_PLATFORM
 //#define USE_PUB_SUB  //uncomment to use PubSubClient(https://github.com/knolleary/pubsubclient)
@@ -25,6 +26,9 @@
 const int MQTT_PORT = 8883;
 const char MQTT_SUB_TOPIC[] = "random/1";
 const char MQTT_PUB_TOPIC[] = "thing/welcome";
+
+// Buffer for sending and receiving spi data
+char buff[256];
 
 #ifdef USE_SUMMER_TIME_DST
 uint8_t DST = 1;
@@ -126,6 +130,14 @@ void messageReceived(String &topic, String &payload)
     state = HIGH;
   }
   digitalWrite(ESP8266_LED, state);
+  
+  // Send the color data to the klz25 over spi
+  SPI.beginTransaction(SPISettings(1000000, MSBFIRST, SPI_MODE0));
+  digitalWrite(SS, LOW);
+  // TODO: format buff to contain the color data from topic and payload
+  SPI.transfer(buff, 256); // If we are returning any data it is stored in buff as the data is written out
+  digitalWrite(SS, HIGH);
+  SPI.endTransaction();
 }
 
 void lwMQTTErr(lwmqtt_err_t reason)
@@ -312,6 +324,11 @@ void setup()
   client.onMessage(messageReceived);
 #endif
   connectToMqtt();
+  
+  // Setup the spi and set SS high
+  SPI.begin();
+  SPI.setClockDivider(SPI_CLOCK_DIV8);
+  digitalWrite(SS, HIGH);
 }
 
 void loop()

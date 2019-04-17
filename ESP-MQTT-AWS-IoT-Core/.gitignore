@@ -1,0 +1,6 @@
+.pio
+.pioenvs
+.piolibdeps
+.vscode
+Adruino\MQTT\*.h
+Adruino\PubSubClient\*.h

@@ -29,7 +29,6 @@ const char MQTT_PUB_TOPIC[] = "thing/welcome";
 
 // Buffer for sending and receiving spi data
 char buff[256];
-memset(buff, '0', 256);
 
 #ifdef USE_SUMMER_TIME_DST
 uint8_t DST = 1;
@@ -60,7 +59,7 @@ unsigned long lastMillis = 0;
 time_t now;
 time_t nowish = 1510592825;
 
-#define ESP8266_LED 13
+#define ESP8266_LED 5
 uint8_t state = HIGH;
 
 void NTPConnect(void)
@@ -131,9 +130,9 @@ void messageReceived(String &topic, String &payload)
     state = HIGH;
   }
   digitalWrite(ESP8266_LED, state);
-  
+  memset(buff, '0', 256);
   // Send the color data to the klz25 over spi
-  SPI.beginTransaction(SPISettings(1000000, MSBFIRST, SPI_MODE0));
+  //SPI.beginTransaction(SPISettings(1000000, MSBFIRST, SPI_MODE0));
   digitalWrite(SS, LOW);
   // TODO: format buff to contain the color data from topic and payload
   buff[0] = 'F';

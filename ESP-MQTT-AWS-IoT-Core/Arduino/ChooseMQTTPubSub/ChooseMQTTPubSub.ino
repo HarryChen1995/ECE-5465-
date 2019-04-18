@@ -29,6 +29,7 @@ const char MQTT_PUB_TOPIC[] = "thing/welcome";
 
 // Buffer for sending and receiving spi data
 char buff[256];
+memset(buff, '0', 256);
 
 #ifdef USE_SUMMER_TIME_DST
 uint8_t DST = 1;
@@ -135,6 +136,10 @@ void messageReceived(String &topic, String &payload)
   SPI.beginTransaction(SPISettings(1000000, MSBFIRST, SPI_MODE0));
   digitalWrite(SS, LOW);
   // TODO: format buff to contain the color data from topic and payload
+  buff[0] = 'F';
+  buff[1] = 'U';
+  buff[2] = 'C';
+  buff[3] = 'K';
   SPI.transfer(buff, 256); // If we are returning any data it is stored in buff as the data is written out
   digitalWrite(SS, HIGH);
   SPI.endTransaction();
